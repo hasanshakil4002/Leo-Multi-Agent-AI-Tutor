@@ -1,0 +1,63 @@
+📌 Portfolio Title
+🦉 Leo: Multi-Agent AI Tutor | CrewAI • Python • Streamlit
+📝 Full Description (copy and paste)
+🦉 LEO: A TEAM OF AI AGENTS THAT TEACHES, QUIZZES & GIVES FEEDBACK
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+💡 THE PROBLEM
+Most "AI tutors" are one chatbot answering questions. They don't plan a lesson, test understanding, or notice when a student is struggling. Learners get explanations, but no practice, no feedback, and no continuity between sessions.
+
+🚀 THE SOLUTION
+Leo splits tutoring into 4 specialist AI agents that hand work to each other, like a real teaching team:
+
+🧭 Coordinator  →  Understands the request, picks the topic and level, and asks a clarifying question if the request is vague
+📘 Explainer  →  Teaches the concept in plain language with a worked example, adapted to the student's past weak areas
+📝 Quiz Master  →  Creates practice questions from the lesson as validated, structured data
+✅ Evaluator  →  Grades answers, explains mistakes, and flags weak areas
+
+🔁 If the score is low, weak areas go back to the Explainer for a focused re-teach.
+🧑 The student answers the quiz personally (human-in-the-loop), and the live interface shows which agent is working at each step.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+⚙️ WHAT MAKES IT TECHNICALLY CHALLENGING
+✔ Real agent-to-agent handoffs using typed Pydantic schemas, not isolated prompts
+✔ Sequential orchestration designed to pause for human input mid-pipeline
+✔ Persistent per-student memory that changes how later lessons are taught
+✔ A dedicated prompt template for each agent role
+✔ Retry logic and clarification handling, so a vague request or failed step doesn't crash the session
+✔ Provider-agnostic: switch between OpenAI and Anthropic models by changing one setting
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎯 WHO NEEDS THIS & WHY IT MATTERS
+🏫 EdTech startups: personalized tutoring without hiring a tutor for every subject
+🎓 Course creators & coaches: add interactive practice and feedback to existing content
+🏢 Corporate training teams: onboarding and compliance learning with built-in assessment
+📚 Tutoring centers & schools: explore AI-assisted study tools
+
+💼 BUSINESS VALUE
+One-to-one tutoring is expensive and hard to scale. A multi-agent design is more structured and reliable than a single chatbot, and each agent can be improved, replaced, or extended independently (new subjects, new quiz formats, new tools).
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🛠️ TECH STACK
+Python • CrewAI • Pydantic • Streamlit • OpenAI & Anthropic APIs (via LiteLLM) • JSON-based memory • Git/GitHub
+
+📦 DELIVERABLES
+✔ Clean, documented source code
+✔ Architecture diagram and README
+✔ requirements.txt, with no API keys committed
+✔ Demo-ready Streamlit interface
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🤝 WHAT I CAN BUILD FOR YOU
+- Multi-agent AI systems (CrewAI / AutoGen)
+- Custom AI tutors, assistants and workflow automations
+- LLM apps with structured, validated outputs
+- Streamlit/Gradio prototypes ready to demo to users or investors
+
+📩 Have an AI idea? Message me and let's turn it into a working product.
+⚡ Short Version (for the 600-character limit)
+🦉 Leo is a multi-agent AI tutor: 4 specialized agents (Coordinator, Explainer, Quiz Master, Evaluator) work as a team to teach, quiz and grade students. Weak scores trigger a targeted re-teach, and the tutor remembers each student across sessions. Built with Python, CrewAI, Pydantic & Streamlit; works with OpenAI or Anthropic. Ideal for EdTech startups, course creators and training teams who want AI that teaches, not just chats.
